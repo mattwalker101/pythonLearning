@@ -1,0 +1,11 @@
+def anti_vowel(text):
+    new = ""
+    l = 0
+    while l <= (len(text)-1):
+        if text[l] in "aeiouAEIOU":
+            l+=1
+        else:
+            new=new+text[l]
+            l+=1
+    return new
+    
