@@ -1,0 +1,16 @@
+#this function takes a list and removes elements that are the same
+def remove_duplicates(stuff):
+    new_list = []
+    
+    for i in range(len(stuff)):
+        duplicate = False
+        for j in range(len(new_list)):
+            if stuff[i] == new_list[j]:
+                duplicate = True
+        #still inside 1st for loop, either add or dont add the item
+        if duplicate == False:
+            new_list.append(stuff[i])
+    return new_list
+    
+print remove_duplicates([1,1,2,2,5,7,9,11,11,5])
+    
