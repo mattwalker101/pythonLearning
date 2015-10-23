@@ -1,0 +1,8 @@
+#this function takes a list of numbers as input, removes all odd numbers and returns the result
+def purify(sequence):
+    new_list = []
+    for i in range(len(sequence)):
+        if sequence[i] % 2 == 0: # is it even
+            new_list.append(sequence[i])
+    return new_list
+    
