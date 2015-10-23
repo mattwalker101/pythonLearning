@@ -1,0 +1,8 @@
+#this function finds the median value of a list
+def median(stuff):
+    stuff = sorted(stuff)
+    length = len(stuff)
+    if length % 2 == 0: # i.e., if an even # of entries
+        return (stuff[length/2] + stuff[(length/2)-1])/(2.0)
+    else:
+        return stuff[int(length/2)]
